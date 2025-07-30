@@ -13,19 +13,18 @@ body{
 
 .horizontal-nav {
   display: flex;
-  gap: 10px; /* 요소 사이 간격 */
 }
 
 .horizontal-nav div {
-    padding-left: 10%;
+    text-align: center;
     width: 25%;
-    padding-right: 10%;
+    border: 2px solid greenyellow;
 }
 
 .horizontal-nav div a {
   text-decoration: none;
   color: #333;
-  font-weight: bold;
+  font-size: 25px;
 }
 
 footer {
