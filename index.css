@@ -16,6 +16,12 @@ body{
   gap: 10px; /* 요소 사이 간격 */
 }
 
+.horizontal-nav div a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
 footer {
   background-color: #432616;
   padding: 20px;
