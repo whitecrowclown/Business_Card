@@ -12,19 +12,20 @@ body{
 }
 
 .horizontal-nav {
-  display: flex;
+    display: flex;
 }
 
 .horizontal-nav div {
     text-align: center;
-    width: 25%;
     border: 2px solid greenyellow;
+    font-size: 25px;
+    width: 100%;
 }
 
-.horizontal-nav div a {
-  text-decoration: none;
-  color: #333;
-  font-size: 25px;
+.horizontal-nav a {
+    text-decoration: none;
+    color: #333;
+    width: 100%;
 }
 
 footer {
