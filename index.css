@@ -16,6 +16,12 @@ body{
   gap: 10px; /* 요소 사이 간격 */
 }
 
+.horizontal-nav div {
+    padding-left: 10%;
+    width: 25%;
+    padding-right: 10%;
+}
+
 .horizontal-nav div a {
   text-decoration: none;
   color: #333;
