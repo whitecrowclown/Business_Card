@@ -4,6 +4,7 @@ header {
   text-align: center;
   border-bottom: 2px solid #ddd;
   font-size: 25PX;
+  margin: 0%;
 }
 
 body{
@@ -17,4 +18,5 @@ footer {
   color: #9A7B4F;
   border-bottom: 2px solid #ddd;
   font-size: 25PX;
+  margin: 0%;
 }
