@@ -13,6 +13,7 @@ body{
 
 .horizontal-nav {
     display: flex;
+    height: 100%;
 }
 
 .horizontal-nav div {
@@ -20,12 +21,14 @@ body{
     border: 2px solid greenyellow;
     font-size: 25px;
     width: 100%;
+    height: 100%;
 }
 
 .horizontal-nav a {
     text-decoration: none;
     color: #333;
     width: 100%;
+    height: 100%;
 }
 
 footer {
