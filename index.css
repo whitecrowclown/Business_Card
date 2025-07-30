@@ -5,3 +5,14 @@ header {
   border-bottom: 2px solid #ddd;
   font-size: 25PX;
 }
+body{
+    margin: 0%;
+}
+footer {
+  background-color: #432616;
+  padding: 20px;
+  text-align: center;
+  color: #9A7B4F;
+  border-bottom: 2px solid #ddd;
+  font-size: 25PX;
+}
