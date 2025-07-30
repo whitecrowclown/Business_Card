@@ -11,6 +11,11 @@ body{
     margin: 0%;
 }
 
+.horizontal-nav {
+  display: flex;
+  gap: 10px; /* 요소 사이 간격 */
+}
+
 footer {
   background-color: #432616;
   padding: 20px;
