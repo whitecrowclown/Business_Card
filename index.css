@@ -52,9 +52,14 @@ footer {
   height: 100%;
 }
 
-  #ownershipChart {
+#ownershipChart {
     max-width: 300px;
     max-height: 300px;
     margin: 0 auto;
     display: block;
-  }
+}
+
+.horizontal-nav a{
+    width : 30%;
+    height: 30%;
+}
