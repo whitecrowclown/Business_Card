@@ -1,0 +1,67 @@
+header {
+  background-color: greenyellow;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  font-size: 25PX;
+  margin: 0%;
+  height: 20%;
+}
+
+body{
+    margin: 0%;
+}
+
+.horizontal-nav {
+    display: flex;
+    height: 100%;
+}
+
+.horizontal-nav div {
+    text-align: center;
+    border: 2px solid greenyellow;
+    font-size: 25px;
+    width: 100%;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.horizontal-nav a {
+    color: #333;
+    width: 100%;
+    height: 100%;
+}
+
+.horizontal-nav a .GiCS_LOGOS{
+    text-decoration: none;
+    color: #333;
+    width: 100%;
+    height: 100%;
+}
+
+.horizontal-nav a .GiCS_LOGOS img{
+    text-decoration: none;
+    color: #333;
+    width: 100%;
+    height: 250px;
+}
+
+footer {
+  background-color: #432616;
+  padding: 20px;
+  text-align: center;
+  color: #9A7B4F;
+  border-bottom: 2px solid #ddd;
+  font-size: 25PX;
+  margin: 0%;
+}
+
+#ownershipChart {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 0 auto;
+    display: block;
+}
