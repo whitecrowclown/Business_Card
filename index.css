@@ -32,6 +32,20 @@ body{
     height: 100%;
 }
 
+.horizontal-nav a .GiCS_LOGOS{
+    text-decoration: none;
+    color: #333;
+    width: 100%;
+    height: 100%;
+}
+
+.horizontal-nav a .GiCS_LOGOS img{
+    text-decoration: none;
+    color: #333;
+    width: 100%;
+    height: 250px;
+}
+
 footer {
   background-color: #432616;
   padding: 20px;
@@ -42,25 +56,9 @@ footer {
   margin: 0%;
 }
 
-.img-box {
-  width: 300px;
-  height: 200px;
-  overflow: hidden;
-}
-
-.img-box img {
-  width: 100%;
-  height: 100%;
-}
-
 #ownershipChart {
     max-width: 300px;
     max-height: 300px;
     margin: 0 auto;
     display: block;
-}
-
-.horizontal-nav a{
-    width : 30%;
-    height: 30%;
 }
