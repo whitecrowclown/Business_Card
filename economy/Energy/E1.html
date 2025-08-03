@@ -24,71 +24,9 @@
         <a href="../../Dairy.html"><div>일기</div></a>
     </nav>
     <h1>시가 총액, 자산, 자본, 부채의 상관 관계</h1>
-    자산 2139억, 자본 1267억, 부채 872억, 시가 총액 1220억(자산 대비 57.03%)
     
     <h1>투자자들</h1>
-    전체 주수 236,981,544, 자사주 52,862,216, 외국인 지분율 17,307,216, 미래에셋자산운용 19,710, 한화자산운용 10,810, 한국투자신탁운용 940, 시장 유통 주수 166,780,652
-    <canvas id="ownershipChart"></canvas>
-    <script>
-        const total = 236981544;
-        const labels = [
-        '자사주',
-        '외국인 지분율',
-        '미래에셋자산운용',
-        '한화자산운용',
-        '한국투자신탁운용',
-        '시장 유통'
-        ];
-
-    const values = [
-      52862216,
-      17307216,
-      19710,
-      10810,
-      940,
-      166780652
-    ];
-
-    const colors = [
-      '#4e79a7', // 자사주
-      '#f28e2b', // 외국인
-      '#e15759', // 미래에셋
-      '#76b7b2', // 한화
-      '#59a14f', // 한국투자신탁
-      '#edc948'  // 유통물량
-    ];
-
-    const ctx = document.getElementById('ownershipChart').getContext('2d');
-    const ownershipChart = new Chart(ctx, {
-      type: 'doughnut',
-      data: {
-        labels: labels,
-        datasets: [{
-          data: values,
-          backgroundColor: colors,
-          borderWidth: 1
-        }]
-      },
-      options: {
-        responsive: true,
-        plugins: {
-          legend: {
-            position: 'bottom'
-          },
-          tooltip: {
-            callbacks: {
-              label: function(context) {
-                const value = context.raw;
-                const percentage = ((value / total) * 100).toFixed(2);
-                return `${context.label}: ${value.toLocaleString()}주 (${percentage}%)`;
-              }
-            }
-          }
-        }
-      }
-    });
-  </script>
-
+    
     <footer>
         2025.07.31 명함 사이트 개설함
     </footer>
