@@ -22,11 +22,16 @@ body{
 }
 
 .horizontal-nav div {
-    text-align: center;
     border: 2px solid greenyellow;
+    text-align: center;
     font-size: 25px;
     width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-style: italic;
+    font-weight: bold;
 }
+
 a {
     text-decoration: none;
     color: #333;
@@ -35,14 +40,13 @@ a {
 .horizontal-nav a {
     color: #333;
     width: 100%;
-    height: 100%;
 }
 
 .horizontal-nav a .GiCS_LOGOS{
     text-decoration: none;
     color: #333;
     width: 100%;
-    height: 100%;
+    height: 300px;
 }
 
 .horizontal-nav a .GiCS_LOGOS img{
@@ -50,6 +54,65 @@ a {
     color: #333;
     width: 100%;
     height: 250px;
+}
+
+.centered-side-menu {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 60px;
+  background: #f0f0f0;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-top {
+  width: 100%;
+  height: 60px;
+  background: #4caf50;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-top img {
+  width: 40px;
+  height: 40px;
+}
+
+.menu-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.menu-content a {
+  text-decoration: none;
+  color: #333;
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.menu-bottom {
+  width: 100%;
+  height: 60px;
+  background: #4caf50;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.Contents {
+    margin-left: 100px;
+    min-height: 1000px;
 }
 
 footer {
