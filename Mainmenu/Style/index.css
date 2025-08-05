@@ -115,6 +115,37 @@ a {
     min-height: 1000px;
 }
 
+.Contents .ChessRoom{
+    display: flex;
+    text-align: center;
+    border-radius: 25%;
+    max-height: 1000px;
+    min-height: 500px;
+    min-width: 100%;
+}
+
+.ChessRoom .ChessPlay{
+    padding: 0%;
+    border: 2px solid brown;
+    border-radius: 20%;
+    margin-right: 5%;
+    min-height: 500px;
+}
+
+.Contents .ChessPlay h1 {
+    margin: 0%;
+    padding: 0%;
+    margin-right: 5%;
+    min-width: 300px;
+
+    border-top-left-radius: 20%;   
+    border-top-right-radius: 20%;
+    
+    border-bottom: greenyellow;
+    text-align: center;
+    padding: 3%;
+}
+
 footer {
   background-color: #432616;
   padding: 20px;
