@@ -137,10 +137,32 @@ a {
     border: 2px solid brown;
 }
 
+
 .Contents .ChessRoom a h3{
     height: 75px;
 }
 
+.Contents .Human_ChessRoom {
+    display: flex;
+    text-align: center;
+    border-radius: 20%;
+    max-height: 1000px;
+    min-height: 500px;
+    min-width: 100%;
+}
+
+.Contents .Human_ChessRoom a {
+    margin-right: 2%;
+    border-radius: 20%;
+    height: 350px;
+    width: 20%;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid yellowgreen;
+}
 
 footer {
     background-color: #432616;
