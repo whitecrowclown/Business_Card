@@ -127,7 +127,7 @@ a {
 .Contents .ChessRoom a {
     margin-right: 2%;
     border-radius: 20%;
-    height: 0%;
+    height: 250px;
     width: 15%;
 
     text-align: center;
