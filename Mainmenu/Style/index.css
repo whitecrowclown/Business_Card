@@ -1,18 +1,18 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 header {
-  background-color: greenyellow;
-  padding: 20px;
-  text-align: center;
-  border-bottom: 2px solid #ddd;
-  font-size: 25PX;
-  margin: 0%;
-  height: 20%;
+    background-color: greenyellow;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    font-size: 25PX;
+    margin: 0%;
+    height: 20%;
 }
 
-body{
+body {
     margin: 0%;
 }
 
@@ -42,14 +42,14 @@ a {
     width: 100%;
 }
 
-.horizontal-nav a .GiCS_LOGOS{
+.horizontal-nav a .GiCS_LOGOS {
     text-decoration: none;
     color: #333;
     width: 100%;
     height: 300px;
 }
 
-.horizontal-nav a .GiCS_LOGOS img{
+.horizontal-nav a .GiCS_LOGOS img {
     text-decoration: none;
     color: #333;
     width: 100%;
@@ -57,57 +57,57 @@ a {
 }
 
 .centered-side-menu {
-  position: fixed;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 60px;
-  background: #f0f0f0;
-  border-radius: 30px;
-  overflow: hidden;
-  box-shadow: 2px 0 8px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 60px;
+    background: #f0f0f0;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .menu-top {
-  width: 100%;
-  height: 60px;
-  background: #4caf50;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    height: 60px;
+    background: #4caf50;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu-top img {
-  width: 40px;
-  height: 40px;
+    width: 40px;
+    height: 40px;
 }
 
 .menu-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10px 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
 }
 
 .menu-content a {
-  text-decoration: none;
-  color: #333;
-  margin: 10px 0;
-  font-size: 15px;
+    text-decoration: none;
+    color: #333;
+    margin: 10px 0;
+    font-size: 15px;
 }
 
 .menu-bottom {
-  width: 100%;
-  height: 60px;
-  background: #4caf50;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+    width: 100%;
+    height: 60px;
+    background: #4caf50;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 .Contents {
@@ -115,45 +115,37 @@ a {
     min-height: 1000px;
 }
 
-.Contents .ChessRoom{
+.Contents .ChessRoom {
     display: flex;
     text-align: center;
-    border-radius: 25%;
+    border-radius: 20%;
     max-height: 1000px;
     min-height: 500px;
     min-width: 100%;
 }
 
-.ChessRoom .ChessPlay{
-    padding: 0%;
-    border: 2px solid brown;
+.Contents .ChessRoom a {
+    margin-right: 2%;
     border-radius: 20%;
-    margin-right: 5%;
-    min-height: 500px;
-}
+    height: 0%;
+    width: 15%;
 
-.Contents .ChessPlay h1 {
-    margin: 0%;
-    padding: 0%;
-    margin-right: 5%;
-    min-width: 300px;
-
-    border-top-left-radius: 20%;   
-    border-top-right-radius: 20%;
-    
-    border-bottom: greenyellow;
     text-align: center;
-    padding: 3%;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid brown;
 }
+
 
 footer {
-  background-color: #432616;
-  padding: 20px;
-  text-align: center;
-  color: #9A7B4F;
-  border-bottom: 2px solid #ddd;
-  font-size: 25PX;
-  margin: 0%;
+    background-color: #432616;
+    padding: 20px;
+    text-align: center;
+    color: #9A7B4F;
+    border-bottom: 2px solid #ddd;
+    font-size: 25PX;
+    margin: 0%;
 }
 
 #ownershipChart {
