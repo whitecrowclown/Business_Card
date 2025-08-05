@@ -164,6 +164,10 @@ a {
     border: 2px solid yellowgreen;
 }
 
+.Contents .Human_ChessRoom a h3{
+    height: 75px;
+}
+
 footer {
     background-color: #432616;
     padding: 20px;
