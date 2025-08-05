@@ -1,45 +1,114 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Style/index.css">
-    <link rel="icon" type="image/png" sizes="16x16"  href="./Style/Real Estate.jpg">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <title>하얀 까마귀의 명함</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Style/index.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="./Style/Energy.jpg">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <title>하얀 까마귀의 명함</title>
 </head>
 
 <body>
-    <header>
-        2025-08-03 하얀까마귀 현황
-    </header>
-    
-    <nav class="horizontal-nav">
-        <a href="../../index.html"><div>메인</div></a>
-        <a href="../../Mainmenu/income.html"><div>수입</div></a>
-        <a href="../../Mainmenu/licences.html"><div>자격증</div></a>
-        <a href="../../Mainmenu/economy.html"><div>경제</div></a>
-        <a href="../../Mainmenu/My_IT.html"><div>IT</div></a>
-        <a href="../../Mainmenu/Family.html"><div>가족</div></a>
-        <a href="../../Mainmenu/Dairy.html"><div>일기</div></a>
-    </nav>
+  <header>
+    2025-08-03 하얀까마귀 현황
+  </header>
 
-    <h1>시가 총액, 자산, 자본, 부채의 상관 관계</h1>
-    자산 2139억, 자본 1267억, 부채 872억, 시가 총액 1220억(자산 대비 57.03%)
-    
-    <h1>투자자들</h1>
-    전체 주수 236,981,544, 자사주 52,862,216, 외국인 지분율 17,307,216, 미래에셋자산운용 19,710, 한화자산운용 10,810, 한국투자신탁운용 940, 시장 유통 주수 166,780,652
-    <canvas id="ownershipChart"></canvas>
-    <script>
-        const total = 236981544;
-        const labels = [
-        '자사주',
-        '외국인 지분율',
-        '미래에셋자산운용',
-        '한화자산운용',
-        '한국투자신탁운용',
-        '시장 유통'
-        ];
+  <nav class="horizontal-nav">
+    <a href="../../index.html">
+      <div>메인</div>
+    </a>
+    <a href="../../Mainmenu/income.html">
+      <div>수입</div>
+    </a>
+    <a href="../../Mainmenu/licences.html">
+      <div>자격증</div>
+    </a>
+    <a href="../../Mainmenu/economy.html">
+      <div>경제</div>
+    </a>
+    <a href="../../Mainmenu/My_IT.html">
+      <div>IT</div>
+    </a>
+    <a href="../../Mainmenu/Family.html">
+      <div>가족</div>
+    </a>
+    <a href="../../Mainmenu/Dairy.html">
+      <div>일기</div>
+    </a>
+  </nav>
+  
+  <div class="centered-side-menu">
+    <div class="menu-top">
+      <img src="./Style/Logo.png" alt="Icon">
+    </div>
+
+    <div class="menu-content">
+      <a href="../economy/Energy/Energy.html">
+        <div>에너지</div>
+      </a>
+
+      <a href="../economy/material/Material.html">
+        <div>소재</div>
+      </a>
+
+      <a href="../economy/Industrials/Industrial.html">
+        <div>산업재</div>
+      </a>
+
+      <a href="../economy/Consumer Discretionary/Consumer Discretionary.html">
+        <div>경기소비재</div>
+      </a>
+
+      <a href="../economy/Consumer Staples/Consumer Staples.html">
+        <div>필수소비재</div>
+      </a>
+
+      <a href="../economy/healthcare/healthcare.html">
+        <div>헬스케어</div>
+      </a>
+
+      <a href="../economy/Financials/Financials.html">
+        <div>금융</div>
+      </a>
+
+      <a href="../economy/IT/IT.html">
+        <div>정보 기술</div>
+      </a>
+
+      <a href="../economy/Communication Services/Communication Services.html">
+        <div>통신 서비스</div>
+      </a>
+
+      <a href="../economy/Utilities/Utilities.html">
+        <div>유틸리티</div>
+      </a>
+
+      <a href="../economy/Real Estate/Real Estate.html">
+        <div>부동산</div>
+      </a>
+    </div>
+    <div class="menu-bottom"></div>
+  </div>
+
+  <h1>시가 총액, 자산, 자본, 부채의 상관 관계</h1>
+  자산 2139억, 자본 1267억, 부채 872억, 시가 총액 1220억(자산 대비 57.03%)
+
+  <h1>투자자들</h1>
+  전체 주수 236,981,544, 자사주 52,862,216, 외국인 지분율 17,307,216, 미래에셋자산운용 19,710, 한화자산운용 10,810, 한국투자신탁운용 940, 시장 유통 주수
+  166,780,652
+  <canvas id="ownershipChart"></canvas>
+  <script>
+    const total = 236981544;
+    const labels = [
+      '자사주',
+      '외국인 지분율',
+      '미래에셋자산운용',
+      '한화자산운용',
+      '한국투자신탁운용',
+      '시장 유통'
+    ];
 
     const values = [
       52862216,
@@ -78,7 +147,7 @@
           },
           tooltip: {
             callbacks: {
-              label: function(context) {
+              label: function (context) {
                 const value = context.raw;
                 const percentage = ((value / total) * 100).toFixed(2);
                 return `${context.label}: ${value.toLocaleString()}주 (${percentage}%)`;
@@ -90,8 +159,9 @@
     });
   </script>
 
-    <footer>
-        2025.07.31 명함 사이트 개설함
-    </footer>
+  <footer>
+    2025.07.31 명함 사이트 개설함
+  </footer>
 </body>
+
 </html>
