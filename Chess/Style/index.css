@@ -61,7 +61,7 @@ a {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    width: 60px;
+    width: 100px;
     background: #f0f0f0;
     border-radius: 30px;
     overflow: hidden;
