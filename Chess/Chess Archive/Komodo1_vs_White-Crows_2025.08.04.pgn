@@ -1,0 +1,26 @@
+[Event "Play vs Bot"]
+[Site "Chess.com"]
+[Date "2025.08.04"]
+[Round "?"]
+[White "Komodo1"]
+[Black "White-Crows"]
+[Result "1-0"]
+[TimeControl "-"]
+[WhiteElo "250"]
+[BlackElo "400"]
+[Termination "Komodo1님이 기권승 하였습니다"]
+[ECO "A10"]
+[EndDate "2025.08.04"]
+[Link "https://www.chess.com/game/computer/356164506?move=0"]
+
+1. c4 Nc6 2. Nc3 Nf6 3. Nf3 h5 4. e3 Rh6 5. h3 Rg6 6. g4 hxg4 7. hxg4 Nxg4 8. b4
+Nxb4 9. d4 d5 10. Qa4+ Qd7 11. cxd5 Nd3+ 12. Kd2 Ndxf2 13. Qxd7+ Bxd7 14. Rh8
+O-O-O 15. Ba3 Nh2 16. Rxh2 Ng4 17. Rh8 Bf5 18. Rh7 Ra6 19. Ne1 Rxa3 20. Rh3 g5
+21. Rg3 e6 22. Nb5 c6 23. Nxa3 cxd5 24. Nb5 Bb4+ 25. Kc1 Ba3+ 26. Nxa3 Rd6 27.
+Nec2 Rc6 28. Nb1 Nh2 29. Be2 g4 30. Rg1 g3 31. Nd2 a5 32. Rxg3 b5 33. a4 bxa4
+34. Rg8+ Kc7 35. Nc4 Rxc4 36. Bxc4 dxc4 37. Na3 c3 38. Nb5+ Kc6 39. Rd8 Kxb5 40.
+Rb8+ Kc4 41. Rxa4+ Kd3 42. Rb5 c2 43. Rb3+ Ke2 44. Rb8 Bd3 45. Rb7 Nf3 46. d5
+Nd2 47. Rg4 Nb3+ 48. Rxb3 a4 49. Rb5 a3 50. Rd4 a2 51. Ra4 a1=Q+ 52. Rxa1 exd5
+53. Rxd5 f6 54. Ra4 f5 55. Rad4 f4 56. Kb2 c1=Q+ 57. Kxc1 f3 58. Rd8 f2 59. Rxd3
+f1=Q+ 60. Kc2 Qd1+ 61. Rxd1 Kf2 62. Rc1 Kxe3 63. Re1+ Kf4 64. Rb8 Kf5 65. Rf8+
+1-0

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>리체스 복기 + 엔진 우세율</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- pgn-viewer -->
+  <script src="https://cdn.jsdelivr.net/npm/@mliebelt/pgn-viewer@1.6.11/lib/dist.js"></script>
+  <!-- chess.js (FEN/PGN 파싱용) -->
+  <script src="https://cdn.jsdelivr.net/npm/chess.js@1.0.0/dist/chess.min.js"></script>
+  <!-- Stockfish (브라우저 WASM 엔진) -->
+  <script src="https://cdn.jsdelivr.net/npm/stockfish@16/stockfish.js"></script>
+</head>
+<body>
+  <header>PGN 복기 뷰어 (리체스 스타일) + 엔진 우세율</header>
+
+  <div class="container fit" id="root">
+    <section>
+      <div class="board-wrap" id="boardWrap">
+        <div class="board-inner" id="board"></div>
+      </div>
+
+      <div class="toolbar">
+        <button class="btn" id="fitBtn">맞춤 보기</button>
+        <button class="btn" id="zoomBtn">크게 보기(스크롤)</button>
+        <button class="btn" id="playBtn">자동 재생</button>
+        <button class="btn" id="stopBtn">정지</button>
+      </div>
+
+      <div class="toolbar">
+        <label class="lbl">수마다 분석(ms):
+          <input id="msPerMove" type="number" min="100" step="100" value="5000" />
+        </label>
+        <button class="btn" id="analyzeCurrent">현재 위치 분석</button>
+        <button class="btn" id="analyzeAll">전체 분석</button>
+        <span id="engineStatus" class="status"></span>
+      </div>
+    </section>
+
+    <aside class="panel">
+      <h3>엔진 우세율 (Stockfish)</h3>
+      <div class="legend">백 기준 +cp 유리 / −cp 불리. 메이트는 #으로 표기.</div>
+      <table>
+        <thead>
+          <tr>
+            <th class="mono">수순</th>
+            <th>평가</th>
+            <th>최선수(PV)</th>
+          </tr>
+        </thead>
+        <tbody id="evalBody"></tbody>
+      </table>
+    </aside>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+:root {
+  --maxSize: 900px;
+  --fitSize: min(90vmin, var(--maxSize));
+  --zoomSize: 110vmin;
+}
+* { box-sizing: border-box; }
+body { font-family: system-ui, Arial, sans-serif; margin:0; background:#f7f7f7; color:#222; }
+header { padding:16px 20px; text-align:center; font-weight:600; }
+.container { display:grid; gap:16px; max-width:1200px; margin:0 auto; padding:0 16px 24px; }
+
+@media (min-width: 980px) {
+  .container { grid-template-columns: 1fr 420px; align-items:start; }
+}
+
+.board-wrap {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0,0,0,.08);
+  padding: 8px;
+}
+.board-inner { width: 100%; aspect-ratio: 1 / 1; }
+
+.container.zoom .board-wrap {
+  width: var(--zoomSize);
+  height: var(--zoomSize);
+  overflow: auto;
+}
+.container.fit .board-wrap { height: auto; overflow: visible; }
+
+.toolbar {
+  display:flex; gap:8px; justify-content:center; align-items:center;
+  margin:8px auto 0; flex-wrap:wrap;
+}
+.btn {
+  padding:8px 12px; border:1px solid #ddd; background:#fff; border-radius:10px;
+  cursor:pointer; font-size:14px; box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+.btn:active { transform: translateY(1px); }
+.lbl { font-size:14px; color:#333; display:flex; gap:6px; align-items:center; }
+.status { font-size:13px; color:#666; min-width: 120px; text-align:center; }
+
+.panel {
+  background:#fff; border-radius:16px; box-shadow:0 6px 24px rgba(0,0,0,.08);
+  padding:12px; overflow:auto; max-height: calc(100vh - 160px);
+}
+.panel h3 { margin:4px 0 8px; font-size:18px; }
+.legend { font-size:12px; color:#666; margin-bottom:8px; }
+table { width:100%; border-collapse:collapse; font-size:13px; }
+thead th {
+  position: sticky; top: 0; background:#fafafa; z-index:1;
+  border-bottom:1px solid #eee; padding:6px 8px; text-align:left; font-weight:600;
+}
+tbody td { border-bottom:1px dashed #f0f0f0; padding:6px 8px; vertical-align:middle; }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
