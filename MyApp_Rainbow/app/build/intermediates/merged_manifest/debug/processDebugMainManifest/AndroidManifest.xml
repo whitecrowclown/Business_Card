@@ -23,7 +23,6 @@
         android:label="RainbowTap"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/Theme.RainbowTap" >
         <activity
             android:name="com.example.rainbowtap.MainActivity"

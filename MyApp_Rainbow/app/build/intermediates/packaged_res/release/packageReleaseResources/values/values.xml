@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="ic_launcher_bg">#4A90E2</color>
-    <string name="app_name">RainbowTap</string>
-    <style name="Theme.RainbowTap" parent="Theme.Material3.Light.NoActionBar">
-        
-    </style>
-</resources>
